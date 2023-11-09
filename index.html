@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      font-family: sans-serif;
+      font-size: 1.2rem;
+    }
+    .container{
+      border: 2px solid black;
+      min-height: 100vh;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 20px;
+      background-color: rgb(18, 45, 18);
+    }
+    .left-text{
+      flex-basis: 30%;
+      /* border: 2px solid white; */
+    }
+    
+    .heading{
+      font-size: 2rem;
+      color: yellowgreen;
+      text-align: center;
+    }
+    .subheading{
+      font-size: 1rem;
+      color:white;
+      text-align: center;
+    }
+     
+    .gallary{
+      flex-basis: 50%;
+      display: grid;
+      gap: 8px;
+      grid-template-columns: repeat(3,1fr);
+      grid-auto-rows: 120px;
+    }
+    .box{
+       background-size: cover;
+       
+    }
+    #box1{
+      grid-row: span 2;
+    }
+    #box2{
+      grid-column: span 2;
+    }
+    #box4{
+      grid-row: span 2;
+    }
+    #box5{
+      grid-column: span 2;
+    }
+    #box7{
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-text">
+      <h2 class="heading">My Portfolio</h2>
+      <p class="subheading">Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. <br>Laborum rem maxime tempora error vel, <br>molestiae natus. <br>Ea rerum voluptatum soluta?</p>
+    </div>
+     <div class="gallary">
+       <div class="box" id="box1" style="background-image: url(https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);"></div>
+       <div class="box"id="box2" style="background-image: url(https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);"></div>
+       <div class="box"id="box3" style="background-image: url(https://plus.unsplash.com/premium_photo-1673603988651-99f79e4ae7d3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);"></div>
+       <div class="box"id="box4" style="background-image: url(https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);"></div>
+       <div class="box" id="box5"style="background-image: url(https://images.unsplash.com/photo-1444464666168-49d633b86797?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);"></div>
+       <div class="box" id="box6"style="background-image: url(https://images.unsplash.com/photo-1527489377706-5bf97e608852?q=80&w=1559&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);"></div>
+       <div class="box"id="box7" style="background-image: url(https://images.unsplash.com/photo-1499002238440-d264edd596ec?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);"></div>
+       
+     </div>
+  
+  </div>
+</body>
+</html>
